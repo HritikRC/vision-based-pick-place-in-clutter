@@ -94,7 +94,7 @@ python predict.py
 ```
 
 <p align="center">
-  <img src="images/yolo_results.png" alt="YOLO Results - synthetic data with domain randomization" width="50%"/>
+  <img src="images/yolo_results.png" alt="YOLO Results - synthetic data with domain randomization" width="75%"/>
 </p>
 
 ---
