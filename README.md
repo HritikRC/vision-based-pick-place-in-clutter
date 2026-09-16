@@ -2,10 +2,16 @@
 
 An NVIDIA Isaac Sim/Lab project that builds a full pipeline for vision-based pick-and-place with a UR5e arm in cluttered scenes. A reinforcement-learning policy controls the arm and gripper, while a perception model trained entirely on synthetic data localizes objects for the policy to act on.
 
-<p align="center">
-  <img width="45%" alt="UR5e picking an object" src="images/pick_place.png" />
-  <img width="45%" alt="UR5e training" src="images/parallel_training.png" />
-</p>
+<table align="center" border="0">
+  <tr>
+    <td style="padding: 10px;">
+      <img width="400" alt="UR5e picking an object" src="images/pick_place.png" />
+    </td>
+    <td style="padding: 10px;">
+      <img width="400" alt="UR5e training" src="images/parallel_training.png" />
+    </td>
+  </tr>
+</table>
 
 ## How it works
 
