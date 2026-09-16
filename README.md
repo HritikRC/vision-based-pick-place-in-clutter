@@ -3,7 +3,7 @@
 An NVIDIA Isaac Sim/Lab project that builds a full pipeline for vision-based pick-and-place with a UR5e arm in cluttered scenes. A reinforcement-learning policy controls the arm and gripper, while a perception model trained entirely on synthetic data localizes objects for the policy to act on.
 
 <p align="center">
-  <img width="800" alt="UR5e picking an object" src="images/pick_place.png" />
+  <img width="500" alt="UR5e picking an object" src="images/pick_place.png" />
 </p>
 
 ## How it works
@@ -23,7 +23,7 @@ The project is split into three sub-projects that form one pipeline, run in this
 | [`ur5e_sdg`](./ur5e_sdg) | Isaac Sim Replicator script for generating the synthetic, domain-randomized training images and annotations. |
 
 <p align="center">
-  <img src="images/pipeline_placeholder.png" alt="Pipeline overview" width="700"/>
+  <img src="images/pipeline_overview.png" alt="Pipeline overview" width="800"/>
 </p>
 
 ---
@@ -39,7 +39,7 @@ Generates a synthetic-data-generation (SDG) dataset for the perception model usi
 - Writes RGB images and 2D bounding-box/segmentation labels using Replicator's `KittiWriter`.
 
 <p align="center">
-  <img src="images/sdg.gif" alt="Synthetic data generation" width="700"/>
+  <img src="images/sdg.gif" alt="Synthetic data generation" width="500"/>
 </p>
 
 **Usage:**
@@ -92,7 +92,7 @@ python predict.py
 ```
 
 <p align="center">
-  <img src="images/yolo_results.png" alt="YOLO Results - synthetic data with domain randomization" width="600"/>
+  <img src="images/yolo_results.png" alt="YOLO Results - synthetic data with domain randomization" width="500"/>
 </p>
 
 ---
@@ -138,7 +138,8 @@ Weights for each term are set in `UR5ESortingEnvCfg` and can be tuned per traini
 - **`UR5ESortingEnv_Play`** (`UR5ESortingEnvCfg_Play`): adds a `TiledCamera` (RGB-D) to the scene and, in `_get_observations`, replaces the ground-truth object position with an estimate from `object_detection.py`: the trained YOLO model detects the object in the RGB image, its depth is read from the depth channel at the detection's center pixel, and the camera intrinsics are used to back-project this into a 3D point, which is then transformed from the camera frame into the robot base frame. This is the environment used to evaluate the policy the way it would actually run on vision alone.
 
 <p align="center">
-  <img width="800" alt="UR5e vs cluttered tray" src="images/setup.png" />
+  <img width="500" alt="UR5e vs cluttered tray" src="images/setup.png" />
+  <img width="500" alt="UR5e training" src="images/parallel_training.png" />
 </p>
 
 ### Usage
