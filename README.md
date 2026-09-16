@@ -1,6 +1,6 @@
 # Vision-based Pick-and-Place in Cluttered Environments
 
-An NVIDIA Isaac Sim/Lab project that builds a full pipeline for vision-based pick-and-place with a UR5e arm in cluttered scenes. A reinforcement-learning policy controls the arm and gripper, while a perception model trained entirely on synthetic data localizes objects for the policy to act on.
+This project presents a full pipeline for vision-based pick-and-place with a UR5e arm in cluttered scenes based on NVIDIA Isaac Sim/Lab. A reinforcement-learning policy controls the arm and gripper, while a perception model trained entirely on synthetic data localizes objects for the policy to act on.
 
 <p align="center">
   <img width="30%" alt="UR5e picking an object" src="images/pick_place.png" />
