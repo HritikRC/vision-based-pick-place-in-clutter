@@ -39,7 +39,7 @@ Generates a synthetic-data-generation (SDG) dataset for the perception model usi
 - Writes RGB images and 2D bounding-box/segmentation labels using Replicator's `KittiWriter`.
 
 <p align="center">
-  [images/sdg.mp4]
+  ![Synthetic data generation](images/sdg.mp4)
 </p>
 
 **Usage:**
