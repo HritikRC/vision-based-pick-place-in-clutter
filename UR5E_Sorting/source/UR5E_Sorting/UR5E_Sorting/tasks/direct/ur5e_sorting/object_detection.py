@@ -7,7 +7,8 @@ _model = None
 def load_model():
     global _model
     if _model is None:
-        _model = YOLO("/home/ubuntu/Desktop/yolo/runs/detect/train/weights/best.pt")
+        # Put your own path here
+        _model = YOLO("/home/ubuntu/Desktop/yolo/runs/detect/train/weights/best.pt") 
     return _model
 
 def inference(
